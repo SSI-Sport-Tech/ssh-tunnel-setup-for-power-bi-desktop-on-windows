@@ -3,7 +3,7 @@
 ## Documentation
 
 ### Introduction
-This setup will allow you to securely connect to a remote data source via SSH tunneling while using Power BI Desktop on your Windows PC.
+This setup will allow you to securely connect to a remote data source (specifically MySQL) via SSH tunneling while using Power BI Desktop on your Windows PC.
 
 ### Important
 **<u>Do not download Power BI from Microsoft Store, as the solution proposed is not compatible, download from the executable from Microsoft Website instead!</u>**
@@ -14,6 +14,7 @@ This setup will allow you to securely connect to a remote data source via SSH tu
 2. Click on the "Download" button to download the `PBIDesktopSetup_x64.exe.exe` file.
 3. Run the downloaded `PBIDesktopSetup_x64.exe.exe` file and follow the installation instructions.
 4. After installation, a shortcut for Power BI Desktop should appear on your desktop. If it does not, follow the steps below to create one manually.
+5. [OPTIONAL] If MySQL database driver is not installed, download and install MySQL database ADO.NET driver from [MySQL Community Downloads](https://dev.mysql.com/downloads/connector/net/). This is required to for PowerBI to make connection to MySQL databases.
 
 #### Step 2: [OPTIONAL] Create a Shortcut Manually (if needed)
 1. Navigate to the installation directory of Power BI Desktop. By default, it is usually located at:
