@@ -34,7 +34,7 @@ By default, if you click Enter to skip all prompts, the ssh key pair should be g
 1. Open notepad and copy following command.
 2. The following command is used to create an SSH tunnel:
    ```sh
-   ssh -i "%USERPROFILE\.ssh\ssh_private_key" username@ssh_server -L local_port:remote_host:remote_port -N
+   ssh -i "%USERPROFILE%\.ssh\ssh_private_key" username@ssh_server -L local_port:remote_host:remote_port -N
    ```
    Replace `ssh_private_key`, `local_port`, `remote_host`, `remote_port`, `username`, and `ssh_server` with your specific details. Remote port will be 3306 for connecting to MySQL database. `-N` argument is to specify do not execute remote commands. This will prevent ssh interactive session.
 
